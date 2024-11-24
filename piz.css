@@ -1,0 +1,149 @@
+/* Basic Styles */
+body {
+    background-image: url('https://img.freepik.com/premium-photo/classic-italian-pizza-light-background_234595-1442.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    color: #333;
+    display: flex;
+    justify-content: flex-start; /* Align all content to the left */
+    align-items: flex-start;
+}
+
+/* Form container styling */
+.form-container {
+    width: 100%;
+    max-width: 400px; /* Keeps the form width fixed at max 400px */
+    margin-left: 0; /* Align the form to the left */
+    padding: 20px;
+    background-color: rgba(173, 216, 230, 0.9); /* Light blue background with some opacity */
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    position: relative; /* Optional, in case you want to add more positioning styles */
+    left: 0; /* Align the form to the left edge */
+}
+
+
+/* Title styles */
+h1 {
+    color: #8B0000; /* Dark Red color */
+    text-align: center; /* Center-aligned title */
+    margin-bottom: 10px;
+    font-family: 'Cursive', 'Georgia', 'Times New Roman', sans-serif; /* Elegant font family */
+    font-weight: bold; /* Make the text bold */
+    font-size: 2.5rem; /* Larger font size for emphasis */
+}
+
+
+h2 {
+    color: #E75480;
+    text-align: left; /* Left-aligned subtitle */
+    margin-bottom: 20px1
+}
+
+h3 {
+    color: #E75480;
+    margin-bottom: 10px;
+}
+
+/* Input fields and textareas */
+input, textarea {
+    width:80%; /* 100% width for the input fields */
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Styling for the radio and checkbox groups */
+.radio-group, .checkbox-group {
+    display: flex;               /* Align items horizontally */
+    flex-wrap: wrap;             /* Allow wrapping if necessary */
+    gap: 10px;                   /* Spacing between items */
+}
+
+.radio-group label, .checkbox-group label {
+    display: inline-flex;        /* Keep labels and inputs inline */
+    align-items: center;         /* Center the input next to the label */
+}
+
+/* Margin for the radio and checkbox inputs */
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;           /* Space between input and label */
+}
+
+
+/* Label styling */
+label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Submit Button */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #E75480;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #C24E72;
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+    text-align: center;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+#order-confirmation:target {
+    display: block;
+}
